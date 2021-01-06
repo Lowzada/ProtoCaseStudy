@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListofActivities">
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="135dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:focusable="true"
+        android:inputType="textPersonName"
+        android:text="Due to: 20/JAN/2021"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDate3"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate3" />
+
+    <EditText
+        android:id="@+id/editTextDate5"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:focusable="true"
+        android:inputType="textPersonName"
+        android:text="Due to: 24/DEC/2022"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMainScreen"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDate3"
+        android:layout_width="136dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:focusable="true"
+        android:inputType="textPersonName"
+        android:text="Due to: 24/JAN/2021"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDate4"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate4" />
+
+    <EditText
+        android:id="@+id/editTextDate4"
+        android:layout_width="168dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="6dp"
+        android:ems="10"
+        android:focusable="true"
+        android:inputType="textPersonName"
+        android:text="Due to: 24/FEB/2021"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDate5"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate5" />
+
+    <CheckBox
+        android:id="@+id/checkBoxStock2"
+        android:layout_width="168dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="1dp"
+        android:text="Vacuuming the Stock"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxStationery2"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxStationery2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxStationery2"
+        android:layout_width="168dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:checked="false"
+        android:text="Restocking the Stationary"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDate5"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDate5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxStore2"
+        android:layout_width="136dp"
+        android:layout_height="46dp"
+        android:text="Clean Store"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxStock2"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxStock2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxToilet2"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="CleanToilet"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxStore2"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxStore2" />
+
+    <Button
+        android:id="@+id/buttonMainScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Back to Main Screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

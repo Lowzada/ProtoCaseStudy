@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetDone">
+
+    <TextView
+        android:id="@+id/textSelectActivity"
+        android:layout_width="159dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="8dp"
+        android:text="Select Activity:"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxToilet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxToilet"
+        android:layout_width="135dp"
+        android:layout_height="44dp"
+        android:background="@null"
+        android:text="CleanToilet"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxStore"
+        app:layout_constraintStart_toStartOf="@+id/textSelectActivity" />
+
+    <CheckBox
+        android:id="@+id/checkBoxStore"
+        android:layout_width="137dp"
+        android:layout_height="44dp"
+        android:text="Clean Store"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxStock"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxToilet" />
+
+    <CheckBox
+        android:id="@+id/checkBoxStock"
+        android:layout_width="201dp"
+        android:layout_height="47dp"
+        android:text="Vacuuming the Stock"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxStationery"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxStore" />
+
+    <CheckBox
+        android:id="@+id/checkBoxStationery"
+        android:layout_width="201dp"
+        android:layout_height="47dp"
+        android:checked="true"
+        android:text="Restocking the Stationary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxStock"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="126dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="32dp"
+        android:text="Enter next activity date required:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextDate2" />
+
+    <Button
+        android:id="@+id/buttonDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <EditText
+        android:id="@+id/editTextDate2"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="24/DEC/2022"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
